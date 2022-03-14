@@ -7,14 +7,18 @@
   <!-----------------------------Resource Section---------------------------------------------------- -->
   <button mat-button [matMenuTriggerFor]="resource">Resources</button>
   <mat-menu #resource="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="learning">Learning</button>
+    <button mat-menu-item  routerLink="/learn" routerLinkActive="active">Learning</button>
     <button mat-menu-item [matMenuTriggerFor]="socialService">Social Service</button>
     <button mat-menu-item [matMenuTriggerFor]="finance">Finance</button>
   </mat-menu>
 
-  <mat-menu #learning="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-    <button mat-menu-item>Birds</button>
+  <mat-menu #some="matMenu">
+    <div>
+      <h2>One</h2>
+    </div>
+    <div>
+      <h2>Two</h2>
+    </div>
   </mat-menu>
 
   <mat-menu #socialService="matMenu">
@@ -36,6 +40,9 @@
     <button mat-menu-item >Forum</button>
     <button mat-menu-item >Chat</button>
   </mat-menu>
+  <!--------------------------------------------------------------------------------- -->
+  <!-------------------------------------Connect-------------------------------------------- -->
+  <button mat-button routerLink="/connect" routerLinkActive="active">Connect</button>
   <!--------------------------------------------------------------------------------- -->
   <!--------------------------------------About Us------------------------------------------- -->
   <button mat-button [matMenuTriggerFor]="animals">About Us</button>
@@ -75,28 +82,5 @@
   </button>
 </mat-toolbar>
 
-<div>
-  <button mat-button [matMenuTriggerFor]="animals">Animal index</button>
-  <mat-menu #animals="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
-  </mat-menu>
+<router-outlet> </router-outlet>
 
-  <mat-menu #vertebrates="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-    <button mat-menu-item>Birds</button>
-  </mat-menu>
-
-  <mat-menu #invertebrates="matMenu">
-    <button mat-menu-item>Insects</button>
-    <button mat-menu-item>Molluscs</button>
-  </mat-menu>
-
-  <mat-menu #fish="matMenu">
-    <button mat-menu-item>Baikal oilfish</button>
-    <button mat-menu-item>Bala shark</button>
-    <button mat-menu-item>Ballan wrasse</button>
-  </mat-menu>
-
-
-</div>
