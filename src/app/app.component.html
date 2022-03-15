@@ -1,86 +1,61 @@
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
+<mat-toolbar class="tool-bar">
+  <mat-icon style="color: blanchedalmond" aria-hidden="false" aria-label="Example home icon" routerLink="/" routerLinkActive="active">home</mat-icon>
 
+  <div style="width: 20px; height: auto; display: inline-block"></div>
+
+  <span style="font-weight: bolder; color: #bbffbf;">Empower</span>
+  <div class="divider"></div>
   <!-----------------------------Resource Section---------------------------------------------------- -->
-  <button mat-button [matMenuTriggerFor]="resource">Resources</button>
+  <button mat-button class="button-properties" [matMenuTriggerFor]="resource">Resources</button>
   <mat-menu #resource="matMenu">
-    <button mat-menu-item  routerLink="/learn" routerLinkActive="active">Learning</button>
+    <button mat-menu-item routerLink="/learn" routerLinkActive="active">Learning</button>
     <button mat-menu-item [matMenuTriggerFor]="socialService">Social Service</button>
     <button mat-menu-item [matMenuTriggerFor]="finance">Finance</button>
   </mat-menu>
 
-  <mat-menu #some="matMenu">
-    <div>
-      <h2>One</h2>
-    </div>
-    <div>
-      <h2>Two</h2>
-    </div>
-  </mat-menu>
-
   <mat-menu #socialService="matMenu">
-    <button mat-menu-item>Insects</button>
-    <button mat-menu-item>Molluscs</button>
+    <button mat-menu-item>Meeting</button>
   </mat-menu>
 
   <mat-menu #finance="matMenu">
-    <button mat-menu-item>Baikal oilfish</button>
-    <button mat-menu-item>Bala shark</button>
-    <button mat-menu-item>Ballan wrasse</button>
+    <button mat-menu-item>Bank Loan</button>
+    <button mat-menu-item>Community Loan</button>
   </mat-menu>
-
+  <div class="divider-button"></div>
   <!--------------------------------------------------------------------------------- -->
   <!-------------------------------NetWork-------------------------------------------------- -->
-  <button mat-button [matMenuTriggerFor]="network">NetWork</button>
+  <button mat-button class="button-properties" [matMenuTriggerFor]="network">NetWork</button>
   <mat-menu #network="matMenu">
-    <button mat-menu-item >Wall</button>
-    <button mat-menu-item >Forum</button>
-    <button mat-menu-item >Chat</button>
+    <button mat-menu-item>Wall</button>
+    <button mat-menu-item>Forum</button>
+    <button mat-menu-item>Chat</button>
   </mat-menu>
+  <div class="divider-button"></div>
   <!--------------------------------------------------------------------------------- -->
   <!-------------------------------------Connect-------------------------------------------- -->
-  <button mat-button routerLink="/connect" routerLinkActive="active">Connect</button>
+  <button mat-button class="button-properties" routerLink="/connect" routerLinkActive="active">Connect</button>
+  <div class="divider-button"></div>
   <!--------------------------------------------------------------------------------- -->
   <!--------------------------------------About Us------------------------------------------- -->
-  <button mat-button [matMenuTriggerFor]="animals">About Us</button>
-  <mat-menu #animals="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
-    <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
-  </mat-menu>
-
-  <mat-menu #vertebrates="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
-    <button mat-menu-item>Birds</button>
-  </mat-menu>
-
-  <mat-menu #invertebrates="matMenu">
-    <button mat-menu-item>Insects</button>
-    <button mat-menu-item>Molluscs</button>
-  </mat-menu>
-
-  <mat-menu #fish="matMenu">
-    <button mat-menu-item>Baikal oilfish</button>
-    <button mat-menu-item>Bala shark</button>
-    <button mat-menu-item>Ballan wrasse</button>
-  </mat-menu>
+  <button mat-button class="button-properties" routerLink="/about" routerLinkActive="active">About Us</button>
   <!--------------------------------------------------------------------------------- -->
   <!--------------------------------------Events------------------------------------------- -->
 
-  <!--------------------------------------------------------------------------------- -->
-
-
-
   <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <button mat-button  style="font-size: medium; height: 32px; border: none; border-radius: 5px;
+    background: antiquewhite;">Login</button>
+  <div class="divider-button"></div>
+  <button mat-button  style="font-size: medium; height: 32px; border: none; border-radius: 5px;
+    background: antiquewhite;"
+          routerLink="/register" routerLinkActive="active">Register</button>
+  <div class="divider-button"></div>
+  <button mat-icon-button style="color: #eb6e0b" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <button mat-icon-button style="color: #eb6e0b" class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
 
-<router-outlet> </router-outlet>
+<router-outlet></router-outlet>
 

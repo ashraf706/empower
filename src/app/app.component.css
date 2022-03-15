@@ -1,3 +1,35 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.tool-bar {
+  background: #3f51b5;
+}
+
+.button-properties {
+  /*background: #313e7c;*/
+  height: 30px;
+  /*border-radius: 5px;*/
+  font-size: medium;
+  color: white;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.button-spacer {
+flex: 1 1;
+}
+
+.divider-button{
+width:5px;
+height:auto;
+display:inline-block;
+}
+
+.divider{
+width:50px;
+height:auto;
+display:inline-block;
+}

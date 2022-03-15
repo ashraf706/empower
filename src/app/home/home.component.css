@@ -9,5 +9,12 @@
 .example-card {
   max-width: 650px;
   margin: 15px;
-  background: #f2fdfa;
+  background: #f2f8fd;
+}
+
+.register-button {
+  font-size: medium;
+  height: 32px;
+  background-color: white;
+  border: none;
 }
