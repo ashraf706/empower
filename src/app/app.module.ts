@@ -10,6 +10,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {AppRoutingModule} from './app-routing.module';
+import { MatSelectModule} from '@angular/material/select';
 
 import { ConnectComponent } from './connect/connect.component';
 import { LearnComponent } from './learn/learn.component';
@@ -37,7 +38,8 @@ import { RegisterComponent } from './register/register.component';
     AppRoutingModule,
     MatCardModule,
     MatListModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

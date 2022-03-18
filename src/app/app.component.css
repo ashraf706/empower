@@ -3,7 +3,11 @@
 }
 
 .tool-bar {
-  background: #3f51b5;
+  background: #770709;
+}
+
+.footer {
+  background: #949494;
 }
 
 .button-properties {
@@ -26,6 +30,12 @@ flex: 1 1;
 width:5px;
 height:auto;
 display:inline-block;
+}
+
+.footer-divider{
+  width:15px;
+  height:auto;
+  display:inline-block;
 }
 
 .divider{
