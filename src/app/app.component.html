@@ -5,7 +5,9 @@
 
   <img style="height: 65px; width: 80px"  src="/assets/img/logo.png" >
   <div class="divider-button"></div>
-  <span style="font-weight: bolder; color: #ffb733; font-size: larger">Shomota</span>
+  <div class="divider-button"></div>
+  <div class="divider-button"></div>
+  <span style="font-weight: bolder; color: #ffb733; font-size: xxx-large">Shomota</span>
   <div class="divider"></div>
   <!-----------------------------Resource Section---------------------------------------------------- -->
   <button mat-button class="button-properties" >News</button>
@@ -18,25 +20,24 @@
   <!--------------------------------------Events------------------------------------------- -->
 
   <span class="example-spacer"></span>
-  <button mat-button class="button-properties"  style="font-size: large" [matMenuTriggerFor]="country">Country</button>
+  <button mat-button class="button-properties"  style="font-size: x-large" [matMenuTriggerFor]="country">Country</button>
   <mat-menu #country="matMenu">
     <button mat-menu-item >Bangladesh</button>
     <button mat-menu-item >UK</button>
   </mat-menu>
   <div class="divider-button"></div>
-  <button mat-button  style="font-size: medium; height: 32px; border: none; border-radius: 5px;
-    background: antiquewhite;">Language</button>
+  <button mat-button class="button-properties"  style="font-size: x-large" >Language</button>
   <div class="divider-button"></div>
-  <button mat-button  style="font-size: medium; height: 32px; border: none; border-radius: 5px;
+  <button mat-button  style="font-size: x-large; height: 32px; border: none; border-radius: 5px;
     background: antiquewhite;"
           routerLink="/register" routerLinkActive="active">Register</button>
   <div class="divider-button"></div>
-  <button mat-icon-button style="color: #eb6e0b" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+  <!--<button mat-icon-button style="color: #eb6e0b" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
   <button mat-icon-button style="color: #eb6e0b" class="example-icon" aria-label="Example icon-button with share icon">
     <mat-icon>share</mat-icon>
-  </button>
+  </button>-->
 </mat-toolbar>
 
 <router-outlet></router-outlet>
@@ -52,6 +53,6 @@
   <span style="color: white; font-size: smaller;">Privacy Policy</span>
   <div class="footer-divider"></div>
   <span style="color: white; font-size: smaller;">Cookies</span>
-  <div><span style="color: white; font-size: smaller; padding-left: 273px;">Copyright © 2022 Shomota.</span></div>
+  <div><span style="color: white; font-size: smaller; padding-left: 400px;">Copyright © 2022 Shomota</span></div>
 </mat-toolbar>
 

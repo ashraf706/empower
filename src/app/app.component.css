@@ -4,6 +4,7 @@
 
 .tool-bar {
   background: #770709;
+  height: 86px;
 }
 
 .footer {
@@ -11,10 +12,8 @@
 }
 
 .button-properties {
-  /*background: #313e7c;*/
   height: 30px;
-  /*border-radius: 5px;*/
-  font-size: medium;
+  font-size: x-large;
   color: white;
   border: 0;
   background: none;
