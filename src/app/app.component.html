@@ -1,5 +1,5 @@
 <mat-toolbar class="tool-bar">
-  <mat-icon style="color: blanchedalmond" aria-hidden="false" aria-label="Example home icon" routerLink="/" routerLinkActive="active">home</mat-icon>
+  <mat-icon style="color: blanchedalmond; font-size: 34px;" aria-hidden="false" aria-label="Example home icon" routerLink="/" routerLinkActive="active">home</mat-icon>
 
   <div style="width: 20px; height: auto; display: inline-block"></div>
 
@@ -20,17 +20,19 @@
   <!--------------------------------------Events------------------------------------------- -->
 
   <span class="example-spacer"></span>
+  <span class="material-icons" style="font-size: 35px; font-weight: bold; color: white;">search</span>
+  <div class="divider-button"></div>
   <button mat-button class="button-properties"  style="font-size: x-large" [matMenuTriggerFor]="country">Country</button>
   <mat-menu #country="matMenu">
-    <button mat-menu-item >Bangladesh</button>
-    <button mat-menu-item >UK</button>
+    <button mat-menu-item style="font-size: large;">Bangladesh</button>
+    <button mat-menu-item style="font-size: large;">UK</button>
   </mat-menu>
   <div class="divider-button"></div>
   <button mat-button class="button-properties"  style="font-size: x-large" >Language</button>
   <div class="divider-button"></div>
   <button mat-button  style="font-size: x-large; height: 32px; border: none; border-radius: 5px;
     background: antiquewhite;"
-          routerLink="/register" routerLinkActive="active">Register</button>
+          routerLink="/register" routerLinkActive="active">Login</button>
   <div class="divider-button"></div>
   <!--<button mat-icon-button style="color: #eb6e0b" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -45,7 +47,7 @@
 <mat-toolbar class="footer">
   <div class="footer-divider"></div>
   <div class="footer-divider"></div>
-  <img style="height: 40px; width: 90px"  src="/assets/img/donate.png" >
+  <img style="height: 51px; width: 110px"  src="/assets/img/donate.png" >
   <div class="footer-divider"></div>
   <div class="footer-divider"></div>
   <span style="color: white; font-size: smaller;">Terms of Use</span>
@@ -53,6 +55,6 @@
   <span style="color: white; font-size: smaller;">Privacy Policy</span>
   <div class="footer-divider"></div>
   <span style="color: white; font-size: smaller;">Cookies</span>
-  <div><span style="color: white; font-size: smaller; padding-left: 400px;">Copyright © 2022 Shomota</span></div>
+  <div><span style="color: white; font-size: smaller; padding-left: 377px;">Copyright © 2022 Shomota</span></div>
 </mat-toolbar>
 
